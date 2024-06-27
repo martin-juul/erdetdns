@@ -8,20 +8,49 @@
   <title>Er det dns?</title>
 
   <style>
-      body {
-          font-family: system-ui, sans-serif;
-          background-color: #333;
-          color: #ededed;
+      :root {
+          --background-color: #333;
+          --link-color: #ededed;
       }
 
-      .title {
-          text-align: center;
+      html, body {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      body {
+          font-family: system-ui, sans-serif;
+          background-color: var(--background-color);
+          color: var(--link-color);
+      }
+
+      main {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+      }
+
+      a, a:visited {
+          color: var(--link-color);
+      }
+
+      footer {
+          display: flex;
+          justify-content: center;
+          margin-top: auto;
       }
   </style>
 </head>
 <body>
 
-<h1 class="title">Ja det er altid dns</h1>
+<main>
+  <h1>Ja det er altid dns</h1>
+</main>
+
+<footer>
+  <a href="https://juul.xyz">juul.xyz</a>
+</footer>
 
 </body>
 </html>
